@@ -8,6 +8,33 @@ var userSchema = mongoose.Schema({
     local            : {
         email        : String,
         password     : String,
+    },
+    property         : {
+        kitchen      : {
+          "lights":  String,
+          "air_conditioner":   String,
+          "fan":     String
+        },
+        hall      : {
+          "lights":  String,
+          "air_conditioner":   String,
+          "fan":     String
+        },
+        living_room      : {
+          "lights":  String,
+          "air_conditioner":   String,
+          "fan":     String
+        },
+        bed_room      : {
+          "lights":  String,
+          "air_conditioner":   String,
+          "fan":     String
+        },
+        garage      : {
+          "lights":  String,
+          "air_conditioner":   String,
+          "fan":     String
+        }
     }
 
 });

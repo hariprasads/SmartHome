@@ -66,6 +66,27 @@ module.exports = function(app, passport) {
         });
     });
 
+    app.get('/kitchen', isLoggedIn, function(req, res) {
+        res.render('kitchen.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+    app.get('/hall', isLoggedIn, function(req, res) {
+        res.render('hall.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+    app.get('/livingroom', isLoggedIn, function(req, res) {
+        res.render('livingroom.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+    app.get('/bedroom', isLoggedIn, function(req, res) {
+        res.render('bedroom.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+
     // =====================================
     // LOGOUT ==============================
     // =====================================
